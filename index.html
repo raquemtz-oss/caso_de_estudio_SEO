@@ -261,13 +261,15 @@ footer{background:var(--ink);color:var(--dmuted);text-align:center;padding:30px;
 
 <!-- ============ TRABAJO REAL (casos + muestras fusionados) ============ -->
 <section id="trabajo">
-  <div class="wrap reveal">
+  <div class="wrap">
+    <div class="reveal">
     <div class="idx">03</div>
     <h2 class="big">TRABAJO <span class="it">real</span></h2>
     <p class="muted" style="max-width:640px;margin-top:18px;">Un mismo método por marca: entender el problema de negocio, definir la estrategia, escribir la pieza y medir el resultado. Esto es lo que salió publicado.</p>
+    </div>
 
     <!-- TRANSMAT -->
-    <article class="case-full">
+    <article class="case-full reveal">
       <div class="case-head"><span class="cn">01</span><h3>Transmat <span class="muted2" style="color:var(--dmuted);font-weight:400;">— B2B Industrial</span></h3></div>
       <div class="chips"><span>SEO</span><span>Estrategia de contenido</span><span>Mailing</span><span>Social B2B</span></div>
       <p class="case-txt"><b>Desafío:</b> empresa de transporte de carga sobredimensionada e izaje con baja visibilidad digital y un público técnico difícil de impactar. <b>Estrategia:</b> keywords del sector en Semrush y GA, pilares de contenido y una voz de marca sobria, técnica y confiable.</p>
@@ -314,7 +316,7 @@ footer{background:var(--ink);color:var(--dmuted);text-align:center;padding:30px;
     </article>
 
     <!-- LAGRIFULL -->
-    <article class="case-full">
+    <article class="case-full reveal">
       <div class="case-head"><span class="cn">02</span><h3>Lagrifull <span class="muted2" style="color:var(--dmuted);font-weight:400;">— Lanzamiento Farma</span></h3></div>
       <div class="chips"><span>Naming de claim</span><span>Landing</span><span>Paid Media</span></div>
       <p class="case-txt"><b>Desafío:</b> lanzar una lágrima artificial en una categoría saturada. <b>Estrategia:</b> concepto «Cuidado experto para tus ojos» con sub-claims rotables, landing y parrilla por fases.</p>
@@ -358,7 +360,7 @@ footer{background:var(--ink);color:var(--dmuted);text-align:center;padding:30px;
     </article>
 
     <!-- AUROSOL -->
-    <article class="case-full">
+    <article class="case-full reveal">
       <div class="case-head"><span class="cn">03</span><h3>Aurosol <span class="muted2" style="color:var(--dmuted);font-weight:400;">— Estrategia &amp; Spots</span></h3></div>
       <div class="chips"><span>Concepto</span><span>Guiones de spot</span><span>Copy influencer</span><span>Naming</span></div>
       <p class="case-txt"><b>Desafío:</b> lanzar Aurosol y Aurosol Forte sin afirmaciones médicas ni nombrar competidores. <b>Estrategia:</b> sistema de mensajes con dos ejes —Pantallas y Vida Saludable— y guiones de spot por escenas.</p>
@@ -386,7 +388,7 @@ footer{background:var(--ink);color:var(--dmuted);text-align:center;padding:30px;
     </article>
 
     <!-- PÁRRAFO SIETE -->
-    <article class="case-full">
+    <article class="case-full reveal">
       <div class="case-head"><span class="cn">04</span><h3>Párrafo Siete <span class="muted2" style="color:var(--dmuted);font-weight:400;">— Correctores de Estilo</span></h3></div>
       <div class="chips"><span>Content editorial</span><span>Storytelling histórico</span><span>Carrusel LinkedIn</span><span>Corrección de estilo</span></div>
       <p class="case-txt"><b>Desafío:</b> una marca de corrección de estilo necesita demostrar autoridad lingüística sin sonar a aviso de servicio. <b>Estrategia:</b> convertir un episodio real y poco conocido de la historia del idioma —la propia ortografía chilena de 1884 a 1927, basada en las reformas de Andrés Bello— en un carrusel de datos curiosos, con ejemplos concretos (hombre/ombre, cedro/zedro) que educan y construyen credibilidad de marca al mismo tiempo.</p>
@@ -409,7 +411,7 @@ footer{background:var(--ink);color:var(--dmuted);text-align:center;padding:30px;
     </article>
 
     <!-- MÁS PROYECTOS -->
-    <div class="more-projects">
+    <div class="more-projects reveal">
       <h4>Más proyectos</h4>
       <div class="mp-grid">
         <a class="mp-card" href="https://www.mudanzasgustainsson.cl/" target="_blank" rel="noopener">
@@ -483,7 +485,7 @@ footer{background:var(--ink);color:var(--dmuted);text-align:center;padding:30px;
 /* Animación de aparición al hacer scroll */
 const io = new IntersectionObserver((entries)=>{
   entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
-},{threshold:0.12});
+},{threshold:0, rootMargin:'0px 0px -10% 0px'});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 </script>
 
