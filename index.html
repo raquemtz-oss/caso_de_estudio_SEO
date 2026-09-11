@@ -109,7 +109,11 @@ nav .links a:hover{color:var(--acc);}
 .carousel-label{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
   color:var(--dmuted);margin-top:22px;}
 @media(max-width:640px){ .img-carousel img{height:280px;} }
-.img-carousel img.email-shot{height:auto;width:240px;border:1px solid var(--line);}
+.newsletter-frame{max-height:400px;overflow-y:auto;border:1px solid var(--line);margin-top:24px;background:var(--paper);}
+.newsletter-frame img{width:100%;height:auto;display:block;}
+.newsletter-frame::-webkit-scrollbar{width:6px;}
+.newsletter-frame::-webkit-scrollbar-track{background:transparent;}
+.newsletter-frame::-webkit-scrollbar-thumb{background:var(--acc);border-radius:3px;}
 
 /* ---------- TRABAJO REAL (casos + muestras fusionados) ---------- */
 .case-full{border-top:1px solid var(--line);padding:52px 0 56px;}
@@ -297,9 +301,10 @@ footer{background:var(--ink);color:var(--dmuted);text-align:center;padding:30px;
         <div class="m-block" style="margin-top:0;">
           <h4>Email &amp; SEO</h4>
           <div class="m-card"><span class="m-lbl">Asuntos que abren</span><p>Flota de grúas XCMG: la diferencia en tu proyecto</p></div>
-          <div class="img-carousel" style="margin-top:0;">
-            <img class="email-shot" src="images 2/transmat/transmat-newsletter.jpg" alt="Transmat — newsletter real, Creamos soluciones para la industria" loading="lazy">
+          <div class="newsletter-frame">
+            <img src="images 2/transmat/transmat-newsletter.jpg" alt="Transmat — newsletter real, Creamos soluciones para la industria" loading="lazy">
           </div>
+          <p class="carousel-label">↕ Desplaza para ver el newsletter completo</p>
           <div class="m-card" style="margin-top:14px;">
             <span class="m-lbl">Artículo · estructura optimizada</span>
             <p class="land-h" style="font-size:17px;">El verdadero boom hídrico en Chile</p>
@@ -396,15 +401,15 @@ footer{background:var(--ink);color:var(--dmuted);text-align:center;padding:30px;
       <div class="m-block">
         <h4>Pieza real · Carrusel LinkedIn — "La ortografía chilena que casi cambió el idioma"</h4>
         <div class="img-carousel">
-          <img src="images 2/parrafo-siete/parrafosiete-9.jpg" alt="Párrafo Siete — Chile tuvo su propia ortografía de 1884 a 1927" loading="lazy">
-          <img src="images 2/parrafo-siete/parrafosiete-7.jpg" alt="Párrafo Siete — reglas ortográficas basadas en Andrés Bello" loading="lazy">
-          <img src="images 2/parrafo-siete/parrafosiete-2.jpg" alt="Párrafo Siete — reformas de Andrés Bello y la gramática en Chile" loading="lazy">
-          <img src="images 2/parrafo-siete/parrafosiete-1.jpg" alt="Párrafo Siete — entrada del edificio de Beauchef 850, Escuela de Injeniería" loading="lazy">
-          <img src="images 2/parrafo-siete/parrafosiete-8.jpg" alt="Párrafo Siete — se eliminó la letra H" loading="lazy">
-          <img src="images 2/parrafo-siete/parrafosiete-4.jpg" alt="Párrafo Siete — la letra C fue sustituida por la Z" loading="lazy">
-          <img src="images 2/parrafo-siete/parrafosiete-3.jpg" alt="Párrafo Siete — ejemplo hombre a ombre" loading="lazy">
-          <img src="images 2/parrafo-siete/parrafosiete-6.jpg" alt="Párrafo Siete — ejemplo cedro a zedro" loading="lazy">
-          <img src="images 2/parrafo-siete/parrafosiete-5.jpg" alt="Párrafo Siete — la reforma no trascendió mucho" loading="lazy">
+          <img src="images 2/parrafosiete/9.jpg" alt="Párrafo Siete — Chile tuvo su propia ortografía de 1884 a 1927" loading="lazy">
+          <img src="images 2/parrafosiete/7.jpg" alt="Párrafo Siete — reglas ortográficas basadas en Andrés Bello" loading="lazy">
+          <img src="images 2/parrafosiete/2.jpg" alt="Párrafo Siete — reformas de Andrés Bello y la gramática en Chile" loading="lazy">
+          <img src="images 2/parrafosiete/1.jpg" alt="Párrafo Siete — entrada del edificio de Beauchef 850, Escuela de Injeniería" loading="lazy">
+          <img src="images 2/parrafosiete/8.jpg" alt="Párrafo Siete — se eliminó la letra H" loading="lazy">
+          <img src="images 2/parrafosiete/4.jpg" alt="Párrafo Siete — la letra C fue sustituida por la Z" loading="lazy">
+          <img src="images 2/parrafosiete/3.jpg" alt="Párrafo Siete — ejemplo hombre a ombre" loading="lazy">
+          <img src="images 2/parrafosiete/6.jpg" alt="Párrafo Siete — ejemplo cedro a zedro" loading="lazy">
+          <img src="images 2/parrafosiete/5.jpg" alt="Párrafo Siete — la reforma no trascendió mucho" loading="lazy">
         </div>
       </div>
       <p class="case-note">Formato de curiosidad histórica pensado para posicionar a la marca como referente en lengua y ortografía, no solo como servicio de corrección.</p>
